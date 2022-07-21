@@ -1,0 +1,332 @@
+#chessboard__rand {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 30px auto 30px;
+    grid-template-areas:
+        "letter1 letter1 letter1"
+        "num1 chessfield num2"
+        "letter2 letter2 letter2";
+}
+
+#chessboard__fields {
+    grid-area: chessfield;
+
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(8, 75px);
+    grid-template-columns: 600px;
+    border: 3px solid #ffce9e;
+}
+
+#chessboard__fields .horiz {
+    display: flex;
+}
+
+#chessboard__fields .horiz button {
+    margin: 0;
+    border: none;
+    width: 75px;
+    height: 75px;
+}
+
+#chessboard__wrapper {
+    /* noch zum grid machen, damit schachfeld genau in der Mitte ist */
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+/* wer ist dran (im__schach) */
+.im__schach {
+    box-shadow: rgba(128, 18, 40, 0.1) 0px 1px 15px 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500px;
+    line-height: 28px;
+}
+
+.im__all-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.im__img-wrapper {
+    height: 65px;
+    width: 65px;
+}
+
+.im__all-img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ENDE wer ist dran (im__schach) */
+
+/* hit figures */
+
+.sthelse {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+}
+
+.hit-figures {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 30px;
+    padding: 10px;
+
+    box-shadow: rgba(128, 18, 40, 0.1) 0px 1px 15px 1px;
+}
+
+.hit-figures-img {
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+}
+
+/* ENDE hit figures */
+
+
+/* 1 */
+.chessboard__letters1 {
+    grid-area: letter1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #ffce9e;
+    border-right: 3px solid #ffce9e;
+    border-left: 3px solid #ffce9e;
+    background: #d18b47;
+}
+
+.chessboard__letters1 div {
+    text-align: center;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chessboard__numbers1 {
+    grid-area: num1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #ffce9e;
+    background: #d18b47;
+}
+
+.chessboard__numbers1 div {
+    text-align: center;
+    width: 30px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2 */
+
+.chessboard__letters2 {
+    grid-area: letter2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #ffce9e;
+    border-right: 3px solid #ffce9e;
+    border-left: 3px solid #ffce9e;
+    background: #d18b47;
+}
+
+.chessboard__letters2 div {
+    text-align: center;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chessboard__numbers2 {
+    grid-area: num2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid #ffce9e;
+    background: #d18b47;
+}
+
+.chessboard__numbers2 div {
+    text-align: center;
+    width: 30px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* karrierte muster */
+
+.horiz button {
+    background-color: #d28c45;
+    position: relative;
+}
+
+.horizontal-8 button:nth-child(odd) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-6 button:nth-child(odd) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-4 button:nth-child(odd) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-2 button:nth-child(odd) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-7 button:nth-child(even) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-5 button:nth-child(even) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-3 button:nth-child(even) {
+    background-color: #ffcf9f;
+}
+
+.horizontal-1 button:nth-child(even) {
+    background-color: #ffcf9f;
+}
+
+/* end of karriertes Muster */
+
+/* figuren (img) und moving boxes */
+
+.moving-box {
+    width: 100%;
+    height: 100%;
+}
+
+.chess-highlighted-button {
+    background-color: #f7efd2;
+}
+
+.moving-box:active {
+    background-color: #f7efd2;
+    cursor: pointer;
+}
+
+.moving-box:hover {
+    cursor: pointer;
+}
+
+/* white */
+.white-bauer {
+    background-image: url("./img/chess/white-bauer.png");
+    background-size: 100%;
+}
+
+.white-turm {
+    background-image: url("./img/chess/white-turm.png");
+    background-size: 100%;
+}
+
+.white-springer {
+    background-image: url("./img/chess/white-springer.png");
+    background-size: 100%;
+}
+
+.white-läufer {
+    background-image: url("./img/chess/white-läufer.png");
+    background-size: 100%;
+}
+
+.white-dame {
+    background-image: url("./img/chess/white-dame.png");
+    background-size: 100%;
+}
+
+.white-könig {
+    background-image: url("./img/chess/white-könig.png");
+    background-size: 100%;
+}
+
+/* black */
+.black-bauer {
+    background-image: url("./img/chess/black-bauer.png");
+    background-size: 100%;
+}
+
+.black-turm {
+    background-image: url("./img/chess/black-turm.png");
+    background-size: 100%;
+}
+
+.black-springer {
+    background-image: url("./img/chess/black-springer.png");
+    background-size: 100%;
+}
+
+.black-läufer {
+    background-image: url("./img/chess/black-läufer.png");
+    background-size: 100%;
+}
+
+.black-dame {
+    background-image: url("./img/chess/black-dame.png");
+    background-size: 100%;
+}
+
+.black-könig {
+    background-image: url("./img/chess/black-könig.png");
+    background-size: 100%;
+}
+
+/* end of figuren (img) */
+
+/* moving boxes around */
+
+.black-bauer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* end of moving boxes around */
+
+/* mark possible moves */
+
+.mark-possible-moves {
+    background-color: #818181;
+}
+
+/* end of marking possible moves */

@@ -1,0 +1,416 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;800&family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./feed-a-star-mole.css">
+    <link rel='stylesheet' href='./chess.css'>
+</head>
+<body>
+    <div class="page">
+
+        <nav id='total-nav'>
+            
+            <div class="filter"></div>
+
+            <div class="filter2"></div>
+
+            <div class='undefined'>
+                <ul class="nav-ul">
+                    <li class="nav__element" id='one'><div class="wrapper"></div><a href='#' class='single'>title</a></li>
+                    <li class="nav__element" id='two'><div class="wrapper"></div><a href='#main-link' class='multi'>game</a></li>
+                    <li class="nav__element" id='three'><div class="wrapper"></div><a href='#rules-link' class='gaame'>rules</a></li>
+                    <li class="nav__element" id='four'><div class="wrapper"></div><a href='#footer-link'>footer</a></li>
+                </ul>
+            </div>
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 1 -->
+                        
+                        <div class='heading'>
+                            
+                            <h5 class='heading-gaming'>Gaming</h5>
+                                <h2 class="main-heading">
+                                    Chess
+                                </h2>
+                            <p>Play the only game, which counts as sport against your friend. Make yourself a legend.</p>
+                        
+                        </div>
+                    
+                        <div class="swiper-img-wrapper">
+                                <!-- das bild noch mit Schachbild austauschen -->
+                                <img src="./img/chessfield.png" alt="" class="swiper-pre-img">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 2 -->
+                        <div class='heading'>
+                            <h5 class='heading-gaming'>Gaming</h5>
+                            <a href="./feed-a-star-mole.html" class='other-website'>
+                            <h2 class="main-heading">
+                                Feed
+                                a <span>star</span>
+                                mole
+                            </h2>
+                            </a>
+                            <p>Fill your time with playing fun games. Feed the moles until the colony is fed up.</p>
+                        </div>
+                        <div class="swiper-img-wrapper">
+                            <a href="./feed-a-star-mole.html" class='other-website'>
+                                <img src="./img/Screenshot_2021-03-11 Document(1).png" alt="" class="swiper-pre-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 3 -->
+                        
+                        <div class='heading'>
+                            
+                            <h5 class='heading-gaming'>Gaming</h5>
+                            <a href="./index.html" class='other-website'>
+                                <h2 class="main-heading">
+                                    Tik <span>Tak</span> Toe
+                                </h2>
+                            </a>
+                            <p>Try to beat the computer or challenge your friends for an epic duel in Tik-Tak-Toe.</p>
+                        
+                        </div>
+                    
+                        <div class="swiper-img-wrapper">
+                            <a href="./index.html">
+                                <img src="./img/field.png" alt="" class="swiper-pre-img">
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-prev">
+                    <img src="./img/arrow_left.png" alt="">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./img/arrow_right.png" alt="">
+                </div>
+
+            </div>
+            
+
+        </nav>
+
+        
+        <main id='main'>
+            <a id="main-link"></a>
+
+          
+            <div class="chess">
+
+                <div id='chessboard__wrapper'>
+
+                    <div class="im__schach">
+
+                        <p>Who?</p>
+                        <div class='im__all-img-wrapper'>
+                            <div class='im__img-wrapper'>
+                                <img src="./img/chess/black-bauer.png" alt="">
+                            </div>
+                            <div class='im__img-wrapper'>
+                                <img src="./img/chess/white-bauer.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+
+                    <div id='chessboard__rand'>
+
+                        <div class="chessboard__letters1">
+                            <div>A</div>
+                            <div>B</div>
+                            <div>C</div>
+                            <div>D</div>
+                            <div>E</div>
+                            <div>F</div>
+                            <div>G</div>
+                            <div>H</div>
+                        </div>
+    
+                        <div class="chessboard__numbers1">
+                            <div>8</div>
+                            <div>7</div>
+                            <div>6</div>
+                            <div>5</div>
+                            <div>4</div>
+                            <div>3</div>
+                            <div>2</div>
+                            <div>1</div>
+                        </div>
+
+                        <div id="chessboard__fields">
+                       
+                            <div class='horiz horizontal-8'>
+                                <button data-index='A8' class='turm-b'><div class='moving-box black-turm'></div></button>
+                                <button data-index='B8' class='springer-b'><div class='moving-box black-springer'></div></button>
+                                <button data-index='C8' class='läufer-b'><div class='moving-box black-läufer'></div></button>
+                                <button data-index='D8' class='dame-b'><div class='moving-box black-dame'></div></button>
+                                <button data-index='E8' class='könig-b'><div class='moving-box black-könig'></div></button>
+                                <button data-index='F8' class='läufer-b'><div class='moving-box black-läufer'></div></button>
+                                <button data-index='G8' class='springer-b'><div class='moving-box black-springer'></div></button>
+                                <button data-index='H8' class='turm-b'><div class='moving-box black-turm'></div></button>
+                            </div>
+                            
+                            <div class='horiz horizontal-7'>
+                                <button data-index='A7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='B7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='C7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='D7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='E7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='F7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='G7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                                <button data-index='H7' class='bauer-b'><div class='moving-box black-bauer'></div></button>
+                            </div>    
+    
+                            <div class='horiz horizontal-6'>
+                                <button data-index='A6'></button>
+                                <button data-index='B6'></button>
+                                <button data-index='C6'></button>
+                                <button data-index='D6'></button>
+                                <button data-index='E6'></button>
+                                <button data-index='F6'></button>
+                                <button data-index='G6'></button>
+                                <button data-index='H6'></button>
+                            </div>    
+    
+                            <div class='horiz horizontal-5'>
+                                <button data-index='A5'></button>
+                                <button data-index='B5'></button>
+                                <button data-index='C5'></button>
+                                <button data-index='D5'></button>
+                                <button data-index='E5'></button>
+                                <button data-index='F5'></button>
+                                <button data-index='G5'></button>
+                                <button data-index='H5'></button>
+                            </div>    
+        
+                            <div class='horiz horizontal-4'>
+                                <button data-index='A4'></button>
+                                <button data-index='B4'></button>
+                                <button data-index='C4'></button>
+                                <button data-index='D4'></button>
+                                <button data-index='E4'></button>
+                                <button data-index='F4'></button>
+                                <button data-index='G4'></button>
+                                <button data-index='H4'></button>
+                            </div>    
+                            
+                            <div class='horiz horizontal-3'>
+                                <button data-index='A3'></button>
+                                <button data-index='B3'></button>
+                                <button data-index='C3'></button>
+                                <button data-index='D3'></button>
+                                <button data-index='E3'></button>
+                                <button data-index='F3'></button>
+                                <button data-index='G3'></button>
+                                <button data-index='H3'></button>
+                            </div>    
+        
+                            <div class='horiz horizontal-2'>
+                                <button data-index='A2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='B2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='C2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='D2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='E2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='F2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='G2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                                <button data-index='H2' class='bauer-w'><div class='moving-box white-bauer'></div></button>
+                            </div>   
+    
+                            <div class='horiz horizontal-1'>
+                                <button data-index='A1' class='turm-w'><div class='moving-box white-turm'></div></button>
+                                <button data-index='B1' class='springer-w'><div class='moving-box white-springer'></div></button>
+                                <button data-index='C1' class='läufer-w'><div class='moving-box white-läufer'></div></button>
+                                <button data-index='D1' class='dame-w'><div class='moving-box white-dame'></div></button>
+                                <button data-index='E1' class='könig-w'><div class='moving-box white-könig'></div></button>
+                                <button data-index='F1' class='läufer-w'><div class='moving-box white-läufer'></div></button>
+                                <button data-index='G1' class='springer-w'><div class='moving-box white-springer'></div></button>
+                                <button data-index='H1' class='turm-w'><div class='moving-box white-turm'></div></button>
+                            </div>
+        
+                        </div>
+
+                        <div class="chessboard__numbers2">
+                            <div>8</div>
+                            <div>7</div>
+                            <div>6</div>
+                            <div>5</div>
+                            <div>4</div>
+                            <div>3</div>
+                            <div>2</div>
+                            <div>1</div>
+                        </div>
+
+                        <div class="chessboard__letters2">
+                            <div>A</div>
+                            <div>B</div>
+                            <div>C</div>
+                            <div>D</div>
+                            <div>E</div>
+                            <div>F</div>
+                            <div>G</div>
+                            <div>H</div>
+                        </div>
+    
+                    </div>
+
+                    <div class="sthelse">
+
+                        <div class="hit-figures hit-figures-black">
+                            <!-- black -->
+                            <!-- here go all the hit figures as images (in small) -->
+                            <!-- add a div and to the div the class 'hit-figures-img' // und dann die Klasse der jeweiligen Figur (white-bauer und so weiter) -->
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+    
+                        </div>
+    
+                        <div class="hit-figures hit-figures-white">
+                            <!-- white -->
+                            <!-- here go all the hit figures as images (in small) -->
+                            <!-- add a div and to the div the class 'hit-figures-img' // und dann die Klasse der jeweiligen Figur (white-bauer und so weiter) -->
+                            
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+                            <div class="hit-figures-img white-bauer"></div>
+                            
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                
+
+            </div>
+
+
+            <div id="rules">
+                <a id="rules-link"></a>
+                <div class="rules-title">
+                    <h2 class="first-title">
+                        r<span>u</span>l<span>e</span>s
+                    </h2>
+                </div>
+                <div class="container-n">
+                    <ul class="game__rules">
+                        <li id="first">
+                            <div class="list-img rules__first">
+                                <img src="./img/levels.png" alt="">
+                            </div>
+                            <div class="rules__content rules__first">
+                                <h5>
+                                    Number
+                                </h5>
+                                <p>Choose the number of moles you have to hit until you win.</p>
+                            </div>
+                        </li>
+                        <li id="second">
+                            <div class="list-img rules__second">
+                                <img src="./img/dashboard.png" alt="">
+                            </div>
+                            <div class="rules__content rules__second">
+                                <h5>
+                                    Difficulty
+                                </h5>
+                                <p>Select a gamemode by clicking on an animal. They represent the different gamemodes.</p>
+                            </div>
+                        </li>
+                        <li id="third">
+                            <div class="list-img rules__thirdt">
+                                <img src="./img/triangular-play-button.png" alt="">
+                            </div>
+                            <div class="rules__content rules__third">
+                                <h5>
+                                    Start the game
+                                </h5>
+                                <p>Click on the image on the left. A window pops up and you can start playing. After you have won the window disapears after some seconds.</p>
+                            </div>
+                        </li>
+                        <li id='fourth'>
+                            <div class="list-img rules__fourth">
+                                <img src="./img/book.png" alt="">
+                            </div>
+                            <div class="rules__content rules__fourth">
+                                <h5>
+                                    Gameplay
+                                </h5>
+                                <ol class="page__rules rules__fourth">
+                                    <li id='fourth__first rules__fourth'>
+                                        <p>
+                                            It is your goal to feed as much moles as possible.
+                                        </p>
+                                    </li>
+                                    <li id="fourth__second rules__fourth">
+                                        <p>The moles appear and disappear randomly based on the gamemode you have chosen before.</p>
+                                    </li>
+                                    <li id="fourth__third rules__fourth">
+                                        <p>If you have fed a mole it wont disapear sad, but happy. After you have fed as much as needed you win.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- the pictures of the rules -->
+                    <div class="rules__img-container">
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/slider.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/difficulty-animals.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/start-game.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/finished.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        
+
+        </main>
+
+        <footer id='total-footer'>
+            <a id="footer-link"></a>footer
+        </footer>
+
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+    <script src='./game-slider.js'></script>
+    <script src='./rules.js'></script>
+    <script src='./index.js'></script>
+    <script src='./chess.js'></script>
+</body>
+</html>

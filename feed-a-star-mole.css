@@ -1,0 +1,395 @@
+/* nothing there yet */
+
+* {
+    box-sizing: border-box;
+}
+
+.feed-a-star-mole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cursor-area {
+    cursor: url("./img/mole-game/cursor.png"), default;
+    background-color: #c0c86d;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.bg {
+    background-image: url("./img/mole-game/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 15px 15px;
+}
+
+.hole {
+    background-color: black;
+    border-radius: 50%;
+    overflow: visible;
+    width: 160px;
+    height: 160px;
+}
+
+.mole {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hole-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.hungry {
+    cursor: url("./img/mole-game/cursor-worm.png"), default;
+}
+
+.gone {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.win {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.worm {
+    width: 1300px;
+}
+
+.worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.worm-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+}
+
+.tic-title {
+    margin-top: 40px;
+}
+
+.cursor-area-hidden {
+    display: none;
+}
+
+.game-img-left-container {
+    width: 50%;
+    box-shadow: rgba(12, 11, 15, 0.32) 0px 1px 13px 0px;
+    position: relative;
+}
+
+#noName {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#start-game-link {
+    position: absolute;
+    top: -50px;
+}
+
+.container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oxanium", cursive;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+    text-transform: uppercase;
+    opacity: 0;
+
+    transition: 0.4s linaer;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+.container2:hover {
+    opacity: 1;
+    background-color: rgba(233, 163, 1, 0.67);
+    transition: 0.4s linaer;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.game-img-left-container:hover #game-img-left {
+    opacity: 0.5;
+    transition: 0.3s linaer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+#game-img-left {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.difficulty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* copied slider */
+
+.schieb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schieberegler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+
+.range__label {
+    margin-bottom: 30px;
+    color: rgb(28, 17, 33);
+    font-size: 20px;
+    font-family: "Oxanium", cursive;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 28.8px;
+}
+
+.schieberegler input[type="range"] {
+    width: 500px;
+}
+
+.schieberegler input[type="range"] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 500px; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+}
+
+.schieberegler input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.schieberegler input[type="range"]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.schieberegler input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* styling */
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid #000000;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #e4a101;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    position: relative;
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+    border: 3px solid #000000;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #e4a101;
+    cursor: pointer;
+    position: relative;
+}
+
+/* the track */
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #1c181e;
+    border-radius: 7px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #1c181e;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #1c181e;
+    border-radius: 7px;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+    border: 3px solid #000000;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #e4a101;
+    cursor: pointer;
+    position: relative;
+}
+
+.rangeslider__fill {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.output {
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: black;
+}
+
+/* end of copied slider */
+
+.button__dif {
+    border-image-repeat: stretch;
+    height: 85px;
+    line-height: 85px;
+    margin-right: 25px;
+    width: 85px;
+    display: block;
+    padding: 13px;
+    border: 5px solid rgb(128, 126, 148);
+    float: left;
+    box-shadow: rgba(12, 11, 15, 0.32) 0px 1px 13px 0px;
+
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+.button__dif img {
+    width: 100%;
+}
+
+.button__dif:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.button__dif:active {
+    cursor: pointer;
+    border-color: #e4a101;
+    transition-property: none;
+}
+
+#start-game-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 150px;
+}
+
+.rules-color2 {
+    border-color: #e4a101;
+}

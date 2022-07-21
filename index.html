@@ -1,0 +1,272 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;800&family=Poppins:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="page"> 
+
+        <nav id='total-nav'>
+            
+            <div class="filter"></div>
+
+            <div class="filter2"></div>
+
+            <div class='undefined'>
+                    <ul class="nav-ul">
+                        <li class="nav__element" id='one'><div class="wrapper"></div><a href='#' class='single'>title</a></li>
+                        <li class="nav__element" id='two'><div class="wrapper"></div><a href='#main-link' class='multi'>game</a></li>
+                        <li class="nav__element" id='three'><div class="wrapper"></div><a href='#rules-link' class='gaame'>rules</a></li>
+                        <li class="nav__element" id='four'><div class="wrapper"></div><a href='#footer-link'>footer</a></li>
+                    </ul>
+            </div>
+            
+            <!-- <div class="game"><img src="./img/game.svg" alt="game"></div> -->
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 1 -->
+                        
+                        <div class='heading'>
+                            
+                            <h5 class='heading-gaming'>Gaming</h5>
+                                <h2 class="main-heading">
+                                    Tik <span>Tak</span> Toe
+                                </h2>
+                            <p>Try to beat the computer or challenge your friends for an epic duel in Tik-Tak-Toe.</p>
+                        
+                        </div>
+                    
+                        <div class="swiper-img-wrapper">
+                                <img src="./img/field.png" alt="" class="swiper-pre-img">
+                            
+                        </div>
+                    </div>
+                        <div class="swiper-slide swiper-slide-css">
+                            <!-- slide 2 -->
+                            <div class='heading'>
+                                <h5 class='heading-gaming'>Gaming</h5>
+                                <a href="./feed-a-star-mole.html" class='other-website'>
+                                    <h2 class="main-heading">
+                                        Feed
+                                        a <span>star</span>
+                                        mole
+                                    </h2>
+                                </a>
+                                <p>Fill your time with playing fun games. Feed the moles until the colony is fed up.</p>
+                            </div>
+                            <div class="swiper-img-wrapper">
+                                <a href="./feed-a-star-mole.html" class='other-website'>
+                                    <img src="./img/Screenshot_2021-03-11 Document(1).png" alt="" class="swiper-pre-img">
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-css">
+                            <!-- slide 3 -->
+                            
+                            <div class='heading'>
+                                
+                                <h5 class='heading-gaming'>Gaming</h5>
+                                <a href="./chess.html" class='other-website'>
+                                    <h2 class="main-heading">
+                                        Chess
+                                    </h2>
+                                </a>
+                                <p>Play the only game, which counts as sport against your friend. Make yourself a legend.</p>
+                            
+                            </div>
+                        
+                            <div class="swiper-img-wrapper">
+                                <a href="./chess.html">
+                                    <!-- das bild noch mit Schachbild austauschen -->
+                                    <img src="./img/chessfield.png" alt="" class="swiper-pre-img">
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-prev">
+                    <img src="./img/arrow_left.png" alt="">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./img/arrow_right.png" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+
+       
+        <main id='main'> 
+            <a id="main-link"></a>
+        
+            <div class="tic-tac-toe" aria-describedby="hint">
+               
+                <div class="tic-title">
+                    <h2 class="first-title">
+                        Tik-<span>Tak</span>-Toe
+                    </h2>
+                    <h3 class="subtitle">
+                        SinglePlayer
+                    </h3>
+                </div>
+
+                <div id='gameboard'>
+                    <button aria-label=''>A1</button>
+                    <button>A2</button>
+                    <button>A3</button>
+
+                    <button>B1</button>
+                    <button aria-label=''>B2</button>
+                    <button>B3</button>
+
+                    <button>C1</button>
+                    <button>C2</button>
+                    <button>C3</button>
+                </div>
+
+                <div class="info-area">
+                    <p class="winner">No winner yet</p>
+
+                    <div id="hint">
+                        <div class='unimportant'>
+                            <img src="./img/circle1.svg" alt="circle123">
+                        </div>
+                        <div class='unimportant'>
+                            <img src="./img/cross-sign.svg" alt="cross123">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lower-buttons">
+                    <button class="gegen button">gegen Computer</button>
+                    <button id='start' class='button'>start again</button>
+                    <button class="fuer button">gegen Spieler</button>
+                </div>
+
+                <div class="features">
+                    <p class='quest'>What do you wanna be?</p>
+                    <div class="sthelse">
+                        <div class="but xxx"><img src="./img/cross-sign.svg" alt=""></div>
+                        <div class="but ooo"><img src="./img/circle1.svg" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="rules">
+                <a id="rules-link"></a>
+                <div class="rules-title">
+                    <h2 class="first-title">
+                        r<span>u</span>l<span>e</span>s
+                    </h2>
+                </div>
+                <div class="container-n">
+                    <ul class="game__rules">
+                        <li id="first">
+                            <div class="list-img rules__first">
+                                <img src="./img/tap.png" alt="">
+                            </div>
+                            <div class="rules__content rules__first">
+                                <h5>
+                                    Prepare
+                                </h5>
+                                <p>Choose a gamemode below the gameboard.</p>
+                            </div>
+                        </li>
+                        <li id="second">
+                            <div class="list-img rules__second">
+                                <img src="./img/gamer.png" alt="">
+                            </div>
+                            <div class="rules__content rules__second">
+                                <h5>
+                                    SinglePlayer
+                                </h5>
+                                <p>Select the cross or the circle on the right side after you choose the gamemode. You beginn.</p>
+                            </div>
+                        </li>
+                        <li id="third">
+                            <div class="list-img rules__thirdt">
+                                <img src="./img/multiplayer.png" alt="">
+                            </div>
+                            <div class="rules__content rules__third">
+                                <h5>
+                                    MultiPlayer
+                                </h5>
+                                <p>Like before, choose a sign on the right side and start playing. On the left side you can see who`s turn it is and when you won.</p>
+                            </div>
+                        </li>
+                        <li id='fourth'>
+                            <div class="list-img rules__fourth">
+                                <img src="./img/book.png" alt="">
+                            </div>
+                            <div class="rules__content rules__fourth">
+                                <h5>
+                                    Gameplay
+                                </h5>
+                                <ol class="page__rules rules__fourth">
+                                    <li id='fourth__first rules__fourth'>
+                                        <p>
+                                            Two players alternate marking empty squares.
+                                        </p>
+                                    </li>
+                                    <li id="fourth__second rules__fourth">
+                                        <p>If one player places three of the same marks in a row, that player wins.</p>
+                                    </li>
+                                    <li id="fourth__third rules__fourth">
+                                        <p>If the spaces are all filled and there is no winner, the game ends in a draw.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- the pictures of the rules -->
+                    <div class="rules__img-container">
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/prepare-img.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/choose-sign.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/the-winner.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/field.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </main>
+
+        <footer id='total-footer'>
+            <a id="footer-link"></a>footer
+        </footer>
+
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+    <script src='./game-slider.js'></script>
+    <script src='./rules.js'></script>
+    <script src='./index.js'></script>
+    <script src='./tic-tac-toe.js'></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feed A Star Mole</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;800&family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./feed-a-star-mole.css">
+</head>
+<body>
+    <div class="page">
+
+        <nav id='total-nav'>
+            
+            <div class="filter"></div>
+
+            <div class="filter2"></div>
+
+            <div class='undefined'>
+                <ul class="nav-ul">
+                    <li class="nav__element" id='one'><div class="wrapper"></div><a href='#' class='single'>title</a></li>
+                    <li class="nav__element" id='two'><div class="wrapper"></div><a href='#main-link' class='multi'>game</a></li>
+                    <li class="nav__element" id='three'><div class="wrapper"></div><a href='#rules-link' class='gaame'>rules</a></li>
+                    <li class="nav__element" id='four'><div class="wrapper"></div><a href='#footer-link'>footer</a></li>
+                </ul>
+            </div>
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 1 -->
+                        <div class='heading'>
+                            <h5 class='heading-gaming'>Gaming</h5>
+                            <h2 class="main-heading">
+                                Feed
+                                a <span>star</span>
+                                mole
+                               
+                            </h2>
+                            <p>Fill your time with playing fun games. Feed the moles until the colony is fed up.</p>
+                        </div>
+                        <div class="swiper-img-wrapper">
+                            <img src="./img/Screenshot_2021-03-11 Document(1).png" alt="" class="swiper-pre-img">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 2 -->
+                        
+                        <div class='heading'>
+                            
+                            <h5 class='heading-gaming'>Gaming</h5>
+                            <a href="./index.html" class='other-website'>
+                                <h2 class="main-heading">
+                                    Tik <span>Tak</span> Toe
+                                </h2>
+                            </a>
+                            <p>Try to beat the computer or challenge your friends for an epic duel in Tik-Tak-Toe.</p>
+                        
+                        </div>
+                    
+                        <div class="swiper-img-wrapper">
+                            <a href="./index.html">
+                                <img src="./img/field.png" alt="" class="swiper-pre-img">
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-css">
+                        <!-- slide 3 -->
+                        
+                        <div class='heading'>
+                            
+                            <h5 class='heading-gaming'>Gaming</h5>
+                            <a href="./chess.html" class='other-website'>
+                                <h2 class="main-heading">
+                                    Chess
+                                </h2>
+                            </a>
+                            <p>Play the only game, which counts as sport against your friend. Make yourself a legend.</p>
+                        
+                        </div>
+                    
+                        <div class="swiper-img-wrapper">
+                            <a href="./chess.html">
+                                <!-- das bild noch mit Schachbild austauschen -->
+                                <img src="./img/chessfield.png" alt="" class="swiper-pre-img">
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-prev">
+                    <img src="./img/arrow_left.png" alt="">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./img/arrow_right.png" alt="">
+                </div>
+
+            </div>
+            
+
+        </nav>
+
+        
+        <main id='main'>
+            <a id="main-link"></a>
+
+          
+            <div class="feed-a-star-mole">
+                <div class="tic-title">
+                    <h2 class="first-title">
+                        <span>Feed</span>-a-<span>star</span>-mole
+                    </h2>
+                    <h3 class="subtitle">
+                        easy
+                    </h3>
+                </div>
+                <div id='start-game-area'>
+                    <div class="game-img-left-container">
+                        <div class="container2">Start<a id='noName' href="#start-game-link"></a></div>
+                        <img id='game-img-left' src="./img/Screenshot_2021-03-11 Document(1).png" alt="">
+                    </div>
+                    <div class="difficulty-container">
+                        <div class='schieb-container'>
+                            <div class="schieberegler">
+                                <label class='range__label' for="panel-size">Number for the win</label>
+                                <div class="rangeslider__fill">
+                                    <input type="range" name="range" min="0" max="100" class='range' value='20'>
+                                    <output class='output' for='range'>10</output>
+                                </div>
+                            </div>
+                        </div>
+                      
+
+                        <div class="difficulty">
+                            <button id='dif-easy' class="button__dif">
+                                <div class='dif-img'>
+                                    <img src="./img/schnecke.png" alt=""class='rules__first2'>
+                                </div>
+                            </button>
+                            <button id='dif-medium' class='button__dif'>
+                                <div class='dif-img'>
+                                    <img src="./img/turtle.png" alt="" class='rules__second2'>
+                                </div>
+                            </button>
+                            <button id='dif-hard' class="button__dif">
+                                <div class='dif-img'>
+                                    <img src="./img/cheetah-feline-silhouette.png" alt="" class='rules__third2'>
+                                </div>
+                            </button>
+                            <button id='dif-expert' class="button__dif">
+                                <div class='dif-img'>
+                                    <img src="./img/gazelle-running-silhouette.png" alt="" class='rules__fourth2'>
+                                </div>
+                            </button>
+                            <button id='dif-impossible' class="button__dif">
+                                <div class='dif-img'>
+                                    <img src="./img/beleuchtung.png" alt="" class='rules__fivth2'>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+                <div class="cursor-area cursor-area-hidden">
+                    <a id="start-game-link"></a>
+                    <section class="bg">
+                        
+                        <div class="worm-box">
+                            <div style='width:5%' class="worm-container">
+                                <img src="./img/mole-game/worm.png" alt="worm score meter" class="worm">
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-0'>
+                                <img data-index='0' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-1'>
+                                <img data-index='1' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-2'>
+                                <img data-index='2' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-3'>
+                                <img data-index='3' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-4'>
+                                <img data-index='4' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-5'>
+                                <img data-index='5' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-6'>
+                                <img data-index='6' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-7'>
+                                <img data-index='7' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-8'>
+                                <img data-index='8' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        <div class="hole-container">
+                            <div class="hole" id='hole-9'>
+                                <img data-index='9' src="./img/mole-game//mole-hungry.png" alt="mole" class='mole'>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <img class='win hide' src="./img/mole-game/win.png" alt="you have won the game">
+                </div>
+
+            </div>
+
+
+            <div id="rules">
+                <a id="rules-link"></a>
+                <div class="rules-title">
+                    <h2 class="first-title">
+                        r<span>u</span>l<span>e</span>s
+                    </h2>
+                </div>
+                <div class="container-n">
+                    <ul class="game__rules">
+                        <li id="first">
+                            <div class="list-img rules__first">
+                                <img src="./img/levels.png" alt="">
+                            </div>
+                            <div class="rules__content rules__first">
+                                <h5>
+                                    Number
+                                </h5>
+                                <p>Choose the number of moles you have to hit until you win.</p>
+                            </div>
+                        </li>
+                        <li id="second">
+                            <div class="list-img rules__second">
+                                <img src="./img/dashboard.png" alt="">
+                            </div>
+                            <div class="rules__content rules__second">
+                                <h5>
+                                    Difficulty
+                                </h5>
+                                <p>Select a gamemode by clicking on an animal. They represent the different gamemodes.</p>
+                            </div>
+                        </li>
+                        <li id="third">
+                            <div class="list-img rules__thirdt">
+                                <img src="./img/triangular-play-button.png" alt="">
+                            </div>
+                            <div class="rules__content rules__third">
+                                <h5>
+                                    Start the game
+                                </h5>
+                                <p>Click on the image on the left. A window pops up and you can start playing. After you have won the window disapears after some seconds.</p>
+                            </div>
+                        </li>
+                        <li id='fourth'>
+                            <div class="list-img rules__fourth">
+                                <img src="./img/book.png" alt="">
+                            </div>
+                            <div class="rules__content rules__fourth">
+                                <h5>
+                                    Gameplay
+                                </h5>
+                                <ol class="page__rules rules__fourth">
+                                    <li id='fourth__first rules__fourth'>
+                                        <p>
+                                            It is your goal to feed as much moles as possible.
+                                        </p>
+                                    </li>
+                                    <li id="fourth__second rules__fourth">
+                                        <p>The moles appear and disappear randomly based on the gamemode you have chosen before.</p>
+                                    </li>
+                                    <li id="fourth__third rules__fourth">
+                                        <p>If you have fed a mole it wont disapear sad, but happy. After you have fed as much as needed you win.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- the pictures of the rules -->
+                    <div class="rules__img-container">
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/slider.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/difficulty-animals.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/start-game.png" alt="">
+                        </div>
+                        <div class="rules__side-img rules__side-hidden">
+                            <img src="./img/finished.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        
+
+        </main>
+
+        <footer id='total-footer'>
+            <a id="footer-link"></a>footer
+        </footer>
+
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+    <script src='./game-slider.js'></script>
+    <script src='./rules.js'></script>
+    <script src='./index.js'></script>
+    <script src='./feed-a-star-mole.js'></script>
+</body>
+</html>
